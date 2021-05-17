@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+html{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    height: 100vh;
+    background-color: white;
+    background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23000000' fill-opacity='0.07'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    color: black;
+    font-family: Montserrat, sans-serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+}
+
+.user-container{
+    
+    max-width: 500px;
+    margin: 10px;
+    padding: 20px 30px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 15px;
+    box-shadow: 0 10px 10px 10px rgba(0,0,0,0.2);
+}
+
+.full-name{
+    text-align: left;
+    font-size: 2rem;
+}
+
+.user-details{
+    padding: 1rem 1.5rem;
+    display: flex;
+    align-items: initial;
+    justify-content: flex-start;
+    
+}
+
+.prof-pic{
+    border-radius: .8rem;
+}
+
+.first-name{
+    margin: 10px;
+    padding: 10px;
+    font-weight: 600;
+}
+
+.last-name{
+    margin: 10px;
+    padding: 10px;
+    font-weight: 600;
+    
+}
+
+.email{
+    margin: 1rem;
+    text-align: left;
+    font-weight: 700;
+    font-size: .8rem;
+}
+
+.next-button{    
+    margin: 10px;
+    min-width: 200px;
+    min-height: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0.3rem rgba(121,121,121,0.65);
+}
+
+.next-button:hover{
+    filter: brightness(110%);
+}
+
+.next-button:active{
+    transform: translate(0, 0.3rem);
+    box-shadow: 0 0.1rem rgba(255, 255, 255, 0.65)
+}
+
+.long-name{
+    font-size: 1.75rem;
+}
+
+@media screen and (max-width: 1000px) {
+    .user-container{
+        max-width: 20rem;
+        margin: auto;
+    }
+    .user-details{
+        font-size: 1.5rem;
+    }
+    img{
+        width: 7rem;
+    }
+    .full-name{
+        text-align: center;
+        font-size: 2rem;
+    }
+    
+    .first-name{
+        margin: 10px;
+        padding: 10px;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    
+    .last-name{
+        margin: 10px;
+        padding: 10px;
+        font-size: 1rem;
+        font-weight: 600;
+        
+    }
+
+    .user-details{
+        padding: 1rem 1.5rem;
+        display: flex;
+        flex-direction: column;
+        
+    }
+}
